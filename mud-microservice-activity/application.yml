@@ -31,15 +31,10 @@ spring:
 # redis config
 redis:
   model: pool
-redis:
   host-and-port: localhost:6379
-redis:
   pass: test123456
-redis:
   max-idle: 8
-redis:
   max-total: 100
-redis:
   max-wait-millis: 2000
 # log
 logging:
