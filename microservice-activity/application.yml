@@ -50,8 +50,7 @@ upload:
   image:
     path:
       activity:
-        attr:
-        /tmp/mud/activity/attr
+        attr: /tmp/mud/activity/attr
       customer:
         activity:
           attr: /tmp/mud/customer/activity/attr
