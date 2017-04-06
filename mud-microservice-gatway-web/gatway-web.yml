@@ -1,0 +1,28 @@
+spring:
+  application:
+    name: mud-microservice-gatway-web
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+# 认证服务
+security:
+  basic:
+    enabled: false
+  oauth2:
+    client:
+      client-id: mud
+      client-secret: mud
+      access-token-uri: http://mud-micorservice-security/oauth/token
+      user-authorization-uri: http://mud-micorservice-security/oauth/authorize
+      scope: read, write
+    resource:
+      token-info-uri: http://mud-micorservice-security/oauth/check_token
+# remote client load balance strategy for Ribbon
+mud-microservice-customer:
+  ribbon:
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RoundRobinRule
+mud-microservice-activity:
+  ribbon:
+    NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RoundRobinRule
