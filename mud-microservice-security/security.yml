@@ -28,6 +28,9 @@ spring:
     maxPoolPreparedStatementPerConnectionSize: 20
     filters: stat,wall,log4j
     connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
+mybatis:
+  mapper-locations: classpath:META-INF/mybatis/sqlmap/*.xml
+  type-aliases-package: com.tony.demo.microservice.mud.dao.entity
 # redis config
 redis:
   model: pool
@@ -36,6 +39,16 @@ redis:
   max-idle: 8
   max-total: 100
   max-wait-millis: 2000
+# sso oauth2 config
+security:
+  oauth2:
+    client:
+      client-id: mud
+      client-secret: mud
+      scope: read, write
+      auto-approve-scopes: .*
+    authorization:
+      check-token-access: permitAll()
 # log
 logging:
   level:
