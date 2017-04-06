@@ -36,6 +36,14 @@ redis:
   max-idle: 8
   max-total: 100
   max-wait-millis: 2000
+# sso
+security:
+  oauth2:
+    resource:
+      token-info-uri: http://localhost:9999/oauth/check_token
+    client:
+      client-id: mud
+      client-secret: mud
 # log
 logging:
   level:
