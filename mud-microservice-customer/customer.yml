@@ -40,7 +40,7 @@ redis:
 security:
   oauth2:
     resource:
-      token-info-uri: http://mud-microservice-security:9999/oauth/check_token
+      token-info-uri: http://${mud-microservice-security}:9999/oauth/check_token
     client:
       client-id: mud
       client-secret: mud
