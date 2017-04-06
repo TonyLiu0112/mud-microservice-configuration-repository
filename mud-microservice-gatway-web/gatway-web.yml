@@ -14,11 +14,11 @@ security:
     client:
       client-id: mud
       client-secret: mud
-      access-token-uri: http://localhost:9999/oauth/token
-      user-authorization-uri: http://localhost:9999/oauth/authorize
+      access-token-uri: http://${mud-microservice-security}:9999/oauth/token
+      user-authorization-uri: http://${mud-microservice-security}:9999/oauth/authorize
       scope: read, write
     resource:
-      token-info-uri: http://localhost:9999/oauth/check_token
+      token-info-uri: http://${mud-microservice-security}:9999/oauth/check_token
 # Remote service load balance strategy for Ribbon invoke
 mud-microservice-customer:
   ribbon:
