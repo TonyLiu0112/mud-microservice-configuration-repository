@@ -7,7 +7,7 @@ spring:
   redis:
     host: localhost
     port: 6379
-    password: test123456
+    password: {cipher}AIAVymXfW1eYiIBs9O7Wfp62Z0uG+GIfSRkU9pU+kRroeT1inlDTxzv+5hSgUb5hKNQgumjAwBqr2Y8LoSE5r+zocr3T5DPAfk81YW/fMa2SBU3ZCoJ/pwmfiQxTSQKrRFoApiMhvO8rNSJwYLikDDushSuStjburqnlBlWmESCcRJlFCWr3FN87UnImP/AJ1yQmsi7oQS2WANGyLVcPWyfX
 # Remote service load balance strategy for Ribbon invoke
 mud-microservice-customer:
   ribbon:

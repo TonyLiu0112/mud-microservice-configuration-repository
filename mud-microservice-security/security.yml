@@ -8,9 +8,9 @@ spring:
     password: guest
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
-    url: jdbc:mysql://localhost:3306/guard?characterEncoding=utf8
-    username: guardmsq
-    password: 123456
+    url: {cipher}AIAPnsVCIH4uaamJ9TrBQDUkSLnbHcLDi44BbLS9rUj5wU/BGCdR9vfGpYvPdGC4zZcghCTjsOzkmfp8WTx9VDd8/gDW/YxhQlIvf4B8zmEmDGsJz8xov3pq+Lx6chkbz4AXkboZlVvndwWt97LRvgQKZZiFoD1Ghfv8ToArRfLIWVKyihT65TZ4WTc8oEd+XeX9nvi/VgelzdUFFU/LMtwpDW3WDqJMHz5bE2dl+GVsfHn0+z5qCoDCbtl5O9nXkE/WXqVxsq4of9phnr2msfL5AVDy+WKi16XZbx6FKOWEyQ==
+    username: {cipher}AIBW+EOylhXDTekFDsX3xuGWJFlVh2beXD+E78mjlruVz7i2R2Z46x6bPV51LU74IuspvW+Y0/6Yp85yo3Nk9BHiw/pFDgwbhXPcippN0izYSVO7UJrPPAUX5WwTdAx3kGBmvU0kWNTIjjS4dJmYv5x4kb1iFlWA20f01kGsiZ9cPFpMh35J3Rxi7x8hmUsF/Kc4/Ln6IAS9AbRJPOPMTBW9
+    password: {cipher}AIBu9YZaTlOK7/GKXL6NNICJF3ShkWcxxoQEjcYbahpC0b58lBFdMpAOjJVbskNrkrg8Aml3nFkLm8IJ4MNjw89WDZEyB7XuV2pGOrGHFxb7VIsVH3uZctSQuDb1kFpc1VDPIMka6eQqtpbjtNyM8nyH1J4ij12VVvvw9wnsP5+i1Zx2QTI1x1IseRcu2eIjFwASa7XL+RoDFFtfwwyLVq0S
     driverClassName: com.mysql.jdbc.Driver
     initialSize: 5
     minIdle: 5
@@ -33,7 +33,7 @@ mybatis:
 redis:
   model: pool
   host-and-port: localhost:6379
-  pass: test123456
+  pass: {cipher}AIAVymXfW1eYiIBs9O7Wfp62Z0uG+GIfSRkU9pU+kRroeT1inlDTxzv+5hSgUb5hKNQgumjAwBqr2Y8LoSE5r+zocr3T5DPAfk81YW/fMa2SBU3ZCoJ/pwmfiQxTSQKrRFoApiMhvO8rNSJwYLikDDushSuStjburqnlBlWmESCcRJlFCWr3FN87UnImP/AJ1yQmsi7oQS2WANGyLVcPWyfX
   max-idle: 8
   max-total: 100
   max-wait-millis: 2000
