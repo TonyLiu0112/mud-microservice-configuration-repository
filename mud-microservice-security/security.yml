@@ -8,7 +8,8 @@ spring:
     password: guest
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
-    url: '{cipher}AIAlaEKBXUYyu7gfhq6qMmkHuUCQqiKRUx0+cHG/IxBSbuZbuQ3GdhhR7XQ/QdHn+Q7PzM7c9AO0SH/RMefuwn3H34tsB+XNs6ZbWZHD5Dp+LuJXrJNh7zKvY7CNekGbvVb+bO5nuVzjhRVa2wrO0lMFzLPccysycmIBoRevurVErZlZCJDbt4v0w2JaXDGKIPtfpkjJuSTFXTgmee/h0+iVaIIN+IFmE32Mpfjx4AYNa1R+PIbx0zwpvfAJAxcaAcPx51FA/HlZJFUbptUSa7vp'
+    # url: '{cipher}AIAlaEKBXUYyu7gfhq6qMmkHuUCQqiKRUx0+cHG/IxBSbuZbuQ3GdhhR7XQ/QdHn+Q7PzM7c9AO0SH/RMefuwn3H34tsB+XNs6ZbWZHD5Dp+LuJXrJNh7zKvY7CNekGbvVb+bO5nuVzjhRVa2wrO0lMFzLPccysycmIBoRevurVErZlZCJDbt4v0w2JaXDGKIPtfpkjJuSTFXTgmee/h0+iVaIIN+IFmE32Mpfjx4AYNa1R+PIbx0zwpvfAJAxcaAcPx51FA/HlZJFUbptUSa7vp'
+    url: '{cipher}AIBjVMe5TR7buJHUNUcgpa6KAa3EabPN7kwA/Ox7gv+VxlFgCU1y6v+SPDKw1dxevQC5ihJDfeWkK0CoqolTYu9v4Rcg1Gme5swX3xuONKOmMMFK7PWSz+BDkqlRZuGeEMcc1Hakgcgw269hy2DMlXT5abAGmq45Pt/CgSdkfaD1ZCKXUh/9ykP9LBYatD02k1AI//TjIqYcGHNuA0Tf+d9AcQkRSoqpWNxzVdMmt5+LJiS68PoQ2Sceu0UU5CqBRt826C3Mgo2Fi1Gjg2kBRUu8'
     username: '{cipher}AIBW+EOylhXDTekFDsX3xuGWJFlVh2beXD+E78mjlruVz7i2R2Z46x6bPV51LU74IuspvW+Y0/6Yp85yo3Nk9BHiw/pFDgwbhXPcippN0izYSVO7UJrPPAUX5WwTdAx3kGBmvU0kWNTIjjS4dJmYv5x4kb1iFlWA20f01kGsiZ9cPFpMh35J3Rxi7x8hmUsF/Kc4/Ln6IAS9AbRJPOPMTBW9'
     password: '{cipher}AIBu9YZaTlOK7/GKXL6NNICJF3ShkWcxxoQEjcYbahpC0b58lBFdMpAOjJVbskNrkrg8Aml3nFkLm8IJ4MNjw89WDZEyB7XuV2pGOrGHFxb7VIsVH3uZctSQuDb1kFpc1VDPIMka6eQqtpbjtNyM8nyH1J4ij12VVvvw9wnsP5+i1Zx2QTI1x1IseRcu2eIjFwASa7XL+RoDFFtfwwyLVq0S'
     driverClassName: com.mysql.jdbc.Driver
