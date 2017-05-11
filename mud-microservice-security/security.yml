@@ -2,7 +2,7 @@ spring:
   application:
     name: mud-microservice-security
   rabbitmq:
-    host: localhost
+    host: mudrabbitmq
     port: 5672
     username: guest
     password: guest
@@ -33,7 +33,7 @@ mybatis:
 # redis config
 redis:
   model: pool
-  host-and-port: localhost:6379
+  host-and-port: mudredis:6379
   pass: '{cipher}AIAVymXfW1eYiIBs9O7Wfp62Z0uG+GIfSRkU9pU+kRroeT1inlDTxzv+5hSgUb5hKNQgumjAwBqr2Y8LoSE5r+zocr3T5DPAfk81YW/fMa2SBU3ZCoJ/pwmfiQxTSQKrRFoApiMhvO8rNSJwYLikDDushSuStjburqnlBlWmESCcRJlFCWr3FN87UnImP/AJ1yQmsi7oQS2WANGyLVcPWyfX'
   max-idle: 8
   max-total: 100
