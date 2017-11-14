@@ -1,11 +1,11 @@
 spring:
   rabbitmq:
-    host: localhost
+    host: mudrabbitmq
     port: 5672
     username: guest
     password: guest
   redis:
-    host: localhost
+    host: mudredis
     port: 6379
     password: '{cipher}AIAVymXfW1eYiIBs9O7Wfp62Z0uG+GIfSRkU9pU+kRroeT1inlDTxzv+5hSgUb5hKNQgumjAwBqr2Y8LoSE5r+zocr3T5DPAfk81YW/fMa2SBU3ZCoJ/pwmfiQxTSQKrRFoApiMhvO8rNSJwYLikDDushSuStjburqnlBlWmESCcRJlFCWr3FN87UnImP/AJ1yQmsi7oQS2WANGyLVcPWyfX'
 # Remote service load balance strategy for Ribbon invoke
@@ -15,6 +15,28 @@ mud-microservice-customer:
 mud-microservice-activity:
   ribbon:
     NFLoadBalancerRuleClassName: com.netflix.loadbalancer.RoundRobinRule
+security:
+  basic:
+    enabled: false
+  oauth2:
+    client:
+      client-id: mud
+      client-secret: mud
+      access-token-uri: http://mud-sso-gateway:18808/sso-proxy/security/security/oauth/token
+      user-authorization-uri: http://mud-sso-gateway:18808/sso-proxy/security/security/oauth/authorize
+      scope: read, write
+    resource:
+      token-info-uri: http://mud-sso-gateway:18808/sso-proxy/security/security/oauth/check_token
+  ignored: /hystrix.stream, /turbine.stream
+feign:
+  hystrix:
+    enabled: true
+hystrix:
+  command:
+    default:
+      execution:
+        isolation:
+          strategy: SEMAPHORE
 # 认证服务
 # security:
 #   basic:

@@ -4,9 +4,10 @@ spring:
     port: 5672
     username: guest
     password: guest
+  jpa:
+      show-sql: true
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
-    # url: '{cipher}AIAlaEKBXUYyu7gfhq6qMmkHuUCQqiKRUx0+cHG/IxBSbuZbuQ3GdhhR7XQ/QdHn+Q7PzM7c9AO0SH/RMefuwn3H34tsB+XNs6ZbWZHD5Dp+LuJXrJNh7zKvY7CNekGbvVb+bO5nuVzjhRVa2wrO0lMFzLPccysycmIBoRevurVErZlZCJDbt4v0w2JaXDGKIPtfpkjJuSTFXTgmee/h0+iVaIIN+IFmE32Mpfjx4AYNa1R+PIbx0zwpvfAJAxcaAcPx51FA/HlZJFUbptUSa7vp'
     url: '{cipher}AIAfBtSled/+geuf4hnzcAU1T7LoeyeVlOV4WEQ5CxMvZTd1n4J8Iylk9HFVVCA7rw25sOp8OTT4qSu0hREstK9d3yhg9dJpBI9I5yCZj+fsN9hIoGwN+hfsTEC0XZgJGIibCCXk/31LYHD9qTCjaXh8D24Bc6IEC20QyeeaKKy6A7QI4ObdbvqOW0Ikj7NtHMDB9tiS4tcjaU4tpqSKmFX2lBHGW/DK+KN1gqqYj7pdIaX/bDD6tM00BIwiUgCU5On0HD5OZs9m89s5E7DAq274'
     username: '{cipher}AIBW+EOylhXDTekFDsX3xuGWJFlVh2beXD+E78mjlruVz7i2R2Z46x6bPV51LU74IuspvW+Y0/6Yp85yo3Nk9BHiw/pFDgwbhXPcippN0izYSVO7UJrPPAUX5WwTdAx3kGBmvU0kWNTIjjS4dJmYv5x4kb1iFlWA20f01kGsiZ9cPFpMh35J3Rxi7x8hmUsF/Kc4/Ln6IAS9AbRJPOPMTBW9'
     password: '{cipher}AIBu9YZaTlOK7/GKXL6NNICJF3ShkWcxxoQEjcYbahpC0b58lBFdMpAOjJVbskNrkrg8Aml3nFkLm8IJ4MNjw89WDZEyB7XuV2pGOrGHFxb7VIsVH3uZctSQuDb1kFpc1VDPIMka6eQqtpbjtNyM8nyH1J4ij12VVvvw9wnsP5+i1Zx2QTI1x1IseRcu2eIjFwASa7XL+RoDFFtfwwyLVq0S'
@@ -25,25 +26,6 @@ spring:
     maxPoolPreparedStatementPerConnectionSize: 20
     filters: stat,wall,log4j
     connectionProperties: druid.stat.mergeSql=true;druid.stat.slowSqlMillis=5000
-# redis config
-redis:
-  model: pool
-  host-and-port: mudredis:6379
-  pass: '{cipher}AIAVymXfW1eYiIBs9O7Wfp62Z0uG+GIfSRkU9pU+kRroeT1inlDTxzv+5hSgUb5hKNQgumjAwBqr2Y8LoSE5r+zocr3T5DPAfk81YW/fMa2SBU3ZCoJ/pwmfiQxTSQKrRFoApiMhvO8rNSJwYLikDDushSuStjburqnlBlWmESCcRJlFCWr3FN87UnImP/AJ1yQmsi7oQS2WANGyLVcPWyfX'
-  max-idle: 8
-  max-total: 100
-  max-wait-millis: 2000
-# sso oauth2 config
-# security:
-#   oauth2:
-#     client:
-#       client-id: mud
-#       client-secret: mud
-#       scope: read, write
-#       auto-approve-scopes: .*
-#     authorization:
-#       check-token-access: permitAll()
-# # log
-# logging:
-#   level:
-#     root: info
+security:
+  user:
+    password: password
